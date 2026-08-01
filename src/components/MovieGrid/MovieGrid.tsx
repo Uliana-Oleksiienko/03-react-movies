@@ -1,12 +1,12 @@
 import type { Movie } from "../../types/movie";
 import css from "./MovieGrid.module.css";
 
-interface MoviesGridProps {
+interface MovieGridProps {
   onSelect: (movie: Movie) => void;
   movies: Movie[];
 }
 
-export default function MovieGrid({ movies, onSelect }: MoviesGridProps) {
+export default function MovieGrid({ movies, onSelect }: MovieGridProps) {
   return (
     <ul className={css.grid}>
       {movies.map((item) => (
